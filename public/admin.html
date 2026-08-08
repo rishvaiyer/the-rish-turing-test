@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>admin — the rish turing test</title>
+<link rel="stylesheet" href="style.css" />
+<style>
+  .chat-shell { max-width: 640px; height: 90vh; }
+  .session { border-bottom: 1px solid var(--border); padding: 12px 16px; }
+  .session h3 { margin: 0 0 8px; font-size: 0.85rem; color: var(--muted); }
+  .tag { font-size: 0.7rem; padding: 1px 6px; border-radius: 6px; margin-left: 6px; }
+  .tag.ai { background: #6366f1; color: white; }
+  .tag.human { background: #16a34a; color: white; }
+  .intercept-row { display: flex; gap: 6px; margin-top: 8px; }
+  .intercept-row input { flex: 1; padding: 6px 10px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg); color: var(--text); }
+  .intercept-row button { padding: 6px 12px; border-radius: 8px; border: none; background: var(--bubble-me); color: white; cursor: pointer; }
+  #keyBar { display: flex; gap: 8px; padding: 12px; }
+  #keyBar input { flex: 1; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border); }
+</style>
+</head>
+<body>
+  <div class="chat-shell">
+    <header><h1>admin — intercept live chats</h1></header>
+    <div id="keyBar">
+      <input id="adminKey" type="password" placeholder="admin key" />
+      <button id="loadBtn">load</button>
+    </div>
+    <div id="sessions" class="messages"></div>
+  </div>
+  <script src="admin.js"></script>
+</body>
+</html>
