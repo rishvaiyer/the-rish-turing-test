@@ -1,12 +1,12 @@
 # the-rish-turing-test
 
-Text with "Rish" — except sometimes it's really him, and sometimes it's an AI
-clone trained on his actual texting style. Friends try to guess which.
+Text with "Rish" — except sometimes it's really her, and sometimes it's an AI
+clone trained on her actual texting style. Friends try to guess which.
 
 Built as a real-life Turing test: the AI answers as Rish using a persona
-built from his real texts (short, lowercase, run-on, warm even mid-vent).
+built from her real texts (short, lowercase, run-on, warm even mid-vent).
 Rish can secretly jump in through an admin page and answer for real —
-friends never see whether a given reply came from him or the clone.
+friends never see whether a given reply came from her or the clone.
 
 ## How it works
 
@@ -14,7 +14,7 @@ friends never see whether a given reply came from him or the clone.
 - Every message triggers a short delay (2–6s, feels human), then the AI
   replies in Rish's voice — unless Rish beats it to the punch
 - Rish has a private `/admin.html` page showing every live conversation. If
-  he sends a reply there before the AI's timer fires, his real reply goes
+  she sends a reply there before the AI's timer fires, her real reply goes
   out instead and the AI never answers that message
 - The friend just sees one continuous conversation with "Rish" — no visible
   seam between the two

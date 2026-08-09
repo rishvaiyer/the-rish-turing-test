@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Chat with 'Rish' — real him, or an AI clone trained on his texting style?",
+  "description": "Chat with 'Rish' — real her, or an AI clone trained on her texting style?",
   "scripts": {
     "start": "node server.js"
   },

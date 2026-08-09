@@ -90,8 +90,8 @@ async function askClone(messages) {
   return data.content[0].text;
 }
 
-// Lets the real Rish jump in and answer as himself before the AI replies —
-// friends never see whether a given reply came from him or the clone.
+// Lets the real Rish jump in and answer as herself before the AI replies —
+// friends never see whether a given reply came from her or the clone.
 app.get("/admin/api/sessions", (req, res) => {
   if (req.query.key !== ADMIN_KEY) return res.status(403).json({ error: "wrong key" });
   const out = {};
